@@ -36,14 +36,14 @@ MongoClient.connect("mongodb://localhost:27017/TodoApp",(err,client)=>{
     // });
 
     ///find by name///
-    db.collection('Users').find({
-        name:'nessma'
-    }).toArray().then((docs)=>{
-        console.log('Todos');
-        console.log(JSON.stringify(docs,undefined,2));
-    },(err)=>{
-        console.log('unable to fetch docs',err)
-    });
+    // db.collection('Users').find({
+    //     name:'nessma'
+    // }).toArray().then((docs)=>{
+    //     console.log('Todos');
+    //     console.log(JSON.stringify(docs,undefined,2));
+    // },(err)=>{
+    //     console.log('unable to fetch docs',err)
+    // });
 
     client.close();
 })
